@@ -7,7 +7,7 @@
     },
 
     "encoder_params" : {
-        "tokenizer_path" : "tokenizers/en_tok/vocab.txt",
+        "tokenizer_path" : "tokenizers/en_tok/",
         "vocab_size" : 5500,
         "min_freq" : 3,
         "max_length" : 512,
@@ -17,7 +17,7 @@
     },
 
     "decoder_params" : {
-        "tokenizer_path" : "tokenizers/de_tok/vocab.txt",
+        "tokenizer_path" : "tokenizers/de_tok/",
         "vocab_size" : 5500,
         "min_freq" : 3,
         "max_length" : 256,
@@ -28,8 +28,8 @@
 
     "model_params" : {
         "batch_size" : 32,
-        "num_epochs" : 5,
-        "lr": 0.0001,
+        "num_epochs" : 30,
+        "lr": 0.0005,
         "model_path" : "models/",
         "model_name": "encdec.mdl"
     }
