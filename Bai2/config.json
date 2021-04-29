@@ -7,7 +7,7 @@
     },
 
     "encoder_params" : {
-        "tokenizer_path" : "tokenizers/en_tok/",
+        "tokenizer_path" : "tokenizers/en_tok/vocab.txt",
         "vocab_size" : 5500,
         "min_freq" : 3,
         "max_length" : 512,
@@ -17,7 +17,7 @@
     },
 
     "decoder_params" : {
-        "tokenizer_path" : "tokenizers/de_tok/",
+        "tokenizer_path" : "tokenizers/de_tok/vocab.txt",
         "vocab_size" : 5500,
         "min_freq" : 3,
         "max_length" : 256,
