@@ -73,9 +73,10 @@ decoder_config = BertConfig(vocab_size = vocabsize,
                     num_hidden_layers = decparams["num_hidden_layers"],
                     hidden_size = decparams["hidden_size"],
                     type_vocab_size = 1,
-                    is_decoder=True)    # Very Important
+                    is_decoder=True,
+                    add_cross_attention=True)    # Very Important
 
-decoder = BertForMaskedLM(config=decoder_config)
+decoder = BertLMHeadModel(config=decoder_config)
 
 # Define encoder decoder model
 model = EncoderDecoderModel(encoder=encoder, decoder=decoder)
