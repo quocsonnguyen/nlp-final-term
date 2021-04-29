@@ -139,7 +139,7 @@ def eval_model():
     model.eval()
     epoch_loss = 0
 
-    for i, (en_input, en_masks, de_output, de_masks) in enumerate(train_dataloader):
+    for i, (en_input, en_masks, de_output, de_masks) in enumerate(valid_dataloader):
 
         optimizer.zero_grad()
 
