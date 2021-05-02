@@ -4,7 +4,7 @@ import torch.utils.data as data
 from torch.nn.utils.rnn import pad_sequence
 import os
 
-class TranslationDataset(data.Dataset):
+class QADataset(data.Dataset):
 
     def __init__(self, inp_file, targ_file, inp_tokenizer, targ_tokenizer, inp_maxlength, targ_maxlength):
 
